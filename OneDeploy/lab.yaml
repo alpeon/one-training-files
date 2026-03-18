@@ -27,23 +27,6 @@ all:
           NETWORK_MASK: 255.255.255.0
           GATEWAY: 172.17.2.1
           DNS: 1.1.1.1
-      evpn1:
-        managed: true
-        template:
-          VN_MAD: vxlan
-          VXLAN_MODE: evpn
-          IP_LINK_CONF: nolearning=
-          PHYDEV: ens2
-          AUTOMATIC_VLAN_ID: "YES"
-          GUEST_MTU: 1450
-          AR:
-            TYPE: IP4
-            IP: 172.18.2.1
-            SIZE: 48
-          NETWORK_ADDRESS: 172.18.2.0
-          NETWORK_MASK: 255.255.255.0
-          GATEWAY: 172.18.2.1
-          DNS: 1.1.1.1
       
 router:
   hosts:
