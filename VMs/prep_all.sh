@@ -26,7 +26,7 @@ rc-service mariadb start
 
 mysql -u root -e 'CREATE USER IF NOT EXISTS "appuser"@"localhost" IDENTIFIED BY "appPassword";'
 mysql -u root -e 'CREATE DATABASE app;'
-mysql -u root -e 'GRANT ALL PRIVILEGES ON app.* TO 'appuser'@"%";'
+mysql -u root -e 'GRANT ALL PRIVILEGES ON app.* TO 'appuser'@"localhost";'
 
 apk add python3 py3-pip git
 python3 -m venv .
