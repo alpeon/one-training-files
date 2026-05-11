@@ -28,9 +28,10 @@ mysql -u root -e 'CREATE USER IF NOT EXISTS "appuser"@"localhost" IDENTIFIED BY 
 mysql -u root -e 'CREATE DATABASE app;'
 mysql -u root -e 'GRANT ALL PRIVILEGES ON app.* TO 'appuser'@"localhost";'
 
+cd ~
 apk add python3 py3-pip git
 python3 -m venv .
-source bin/activate
+source ~/bin/activate
 mkdir app
 git clone https://github.com/alpeon/test-app.git app
 cd app
