@@ -2,7 +2,7 @@ all:
   vars:
     ansible_user: ubuntu
     one_pass: 'OpenNebula123!'
-    one_version: '7.0'
+    one_version: '7.2'
     ensure_hosts: true
     ensure_hostname: true
     features: { evpn: true }
