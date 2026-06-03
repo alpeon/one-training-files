@@ -1,6 +1,6 @@
 #!/bin/bash
 
-apk add python3 py3-pip git
+apt add python3 py3-pip git
 python3 -m venv .
 source bin/activate
 mkdir app
