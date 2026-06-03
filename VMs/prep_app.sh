@@ -1,6 +1,8 @@
 #!/bin/bash
 
-apt install python3 py3-pip git
+apt update
+apt install python3 python3-venv py3-pip git
+cd ~
 python3 -m venv .
 source bin/activate
 mkdir app
