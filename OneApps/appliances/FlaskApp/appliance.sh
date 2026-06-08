@@ -64,7 +64,7 @@ setup_flask()
     source bin/activate
     mkdir app
     git clone https://github.com/alpeon/test-app.git app
-    cd app
+    cd app/old
     pip install -r requirements.txt
 
 }
