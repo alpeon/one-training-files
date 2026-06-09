@@ -13,7 +13,7 @@ spec:
         app: cloudflared
     spec:
       containers:
-        - name: test-app
+        - name: cloudflared
           image: cloudflare/cloudflared
           args:
             - tunnel
