@@ -34,7 +34,7 @@ try:
     marketplace_app_id = [marketplace_apps[_].ID for _ in range(len(marketplace_apps)) if marketplace_apps[_].NAME == alma_linux_name][0]
 
     # import the Alpine Linux to the default datastore.
-    imported_alpine_linux = pyone.marketapp_export(one,marketplace_app_id,image_datastore_id)
+    imported_alpine_linux = pyone.helpers.marketapp_export(one,marketplace_app_id,image_datastore_id)
     alma_linux_image_id = imported_alpine_linux['image']
     alma_linux_vmtemplate_id = imported_alpine_linux['vmtemplate']
 
