@@ -7,27 +7,37 @@
 #### User inputs
 
 Name: DB_HOST
+
 Type: Text
+
 Default value: 127.0.0.1
 
 Name: APP_DATABASE
+
 Type: Text
+
 Default value: app
 
 Name: DB_USER
+
 Type: Text
+
 Default value: appuser
 
 Name: DB_USER_PASSWORD
+
 Type: Password
 
 Name: TIMEZONE
+
 Type: Text
+
 Default value: UTC
 
 #### Custom Context Variables
 
 Name: SET_HOSTNAME
+
 Value: $NAME
 
 #### Start script
