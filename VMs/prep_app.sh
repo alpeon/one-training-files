@@ -1,7 +1,7 @@
 #!/bin/bash
 
 apt update
-apt install python3 python3-venv py3-pip git
+apt install python3 python3-venv python3-pip git
 cd ~
 python3 -m venv .
 source bin/activate
