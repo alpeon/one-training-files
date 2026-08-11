@@ -15,6 +15,11 @@ cd app
 mv app/* .
 pip install -r requirements.txt
 
+## Fix variables
+sed -i 's/DB_ROOT/DB_USER/g' app.py
+sed -i 's/MYSQL_ROOT_PASSWORD/DB_USER_PASSWORD/g' app.py
+sed -i 's/MYSQL_DATABASE/APP_DATABASE/g' app.py
+
 ## install cloudflared cli
 
 curl -L https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64 -o /usr/bin/cloudflared
